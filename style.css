@@ -1,0 +1,30 @@
+body {
+  background: linear-gradient(to right, #1d2b64, #f8cdda);
+  color: white;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.planet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.planet-grid div {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.planet-grid div:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hidden {
+  display: none;
+}
